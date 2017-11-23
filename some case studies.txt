@@ -1,0 +1,22 @@
+case studies
+
+1）Data Physicalization
+
+http://dataphys.org/list/emoto-projection-augmented-heatmaps-of-twitter-data/
+
+http://dataphys.org/list/manually-animated-graph-of-scientific-data/
+
+http://dataphys.org/list/centograph-dynamic-bar-charts-show-keyword-popularity/
+
+http://dataphys.org/list/pulse-tangible-line-graph/
+
+http://dataphys.org/list/season-in-review-baseball-stats/
+
+http://dataphys.org/list/people-wood-data-sculpture-of-questionnaire-data/
+
+http://dataphys.org/list/dynamic-physical-charts-to-communicate-community-data/
+
+2）D3
+https://github.com/d3/d3/wiki/Gallery
+
+
