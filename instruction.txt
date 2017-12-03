@@ -1,0 +1,42 @@
+
+#…or create a new repository on the command line
+echo "# 111" >> README.md
+
+#初始化本地仓库
+git init
+git add README.md
+#or git add .
+git commit -m "first commit"
+
+# 连接到远程仓库，并将代码同步到远程仓库
+
+#连接到远程仓库并为该仓库创建别名 , 别名为origin . 这个别名是自定义的，通常用origin ;
+#远程仓库地址，就是你自己新建的那个仓库的地址，复制地址的方法参考 第二张图。
+#如：git remote add origin https://github.com/CnPeng/MyCustomAlertDialog.git 这段代码的含义是： 连接到github上https://github.com/CnPeng/MyCustomAlertDialog.git 这个仓库，并创建别名为origin . （之后push 或者pull 的时候就需要使用到这个 origin 别名）
+
+git remote add origin https://github.com/taiyang777/111.git
+
+
+#创建一个 upStream （上传流），并将本地代码通过这个 upStream 推送到 别名为 origin 的仓库中的 master 分支上
+
+#-u ，就是创建 upStream 上传流，如果没有这个上传流就无法将代码推送到 github；同时，这个 upStream 只需要在初次推送代码的时候创建，以后就不用创建了
+#另外，在初次 push 代码的时候，可能会因为网络等原因导致命令行终端上的内容一直没有变化，耐心等待一会就好。
+
+git push -u origin master
+
+
+
+#下次上传
+
+#添加全部修改的代码，准备提交
+git add .
+
+#添加全部修改的代码，准备提交
+git commit -m ‘提交说明’
+
+#如果是多人协作开发的话，一定要先 pull ，将 github 的代码拉取到本地，这样在 merge 解决冲突的时候稍微简便些。
+默认拉取到 master分支（如果只是自己做这个项目，可以忽略pull）
+git pull
+
+#将代码推送到 github , 默认推送到 别名为 origin 的仓库中的 master 分支上。
+git push
